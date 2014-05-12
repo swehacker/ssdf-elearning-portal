@@ -28,10 +28,6 @@ public class Version {
             ioe.printStackTrace();
         }
 
-        () -> {
-            for (int i = 0; i < 100; i++) System.out.println("Hello");
-        };
-
         return mf.getMainAttributes();
     }
 }
