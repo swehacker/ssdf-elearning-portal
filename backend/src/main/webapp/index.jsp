@@ -1,4 +1,4 @@
-<%@ page import="se.yos.course.CourseAdministration" %>
+<%@ page import="se.yos.courseEntity.CourseAdministration" %>
 <html>
 <body>
 <h2>Backend!</h2>

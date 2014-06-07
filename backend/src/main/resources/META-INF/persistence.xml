@@ -2,7 +2,7 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
     <persistence-unit name="yos" transaction-type="RESOURCE_LOCAL">
         <provider>org.apache.openjpa.persistence.PersistenceProviderImpl</provider>
-        <class>se.yos.course.domain.Course</class>
+        <class>se.yos.se.yos.domain.domain.Course</class>
         <properties>
             <property name="openjpa.jdbc.SynchronizeMappings" value="buildSchema"/>
             <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3306/yos"/>

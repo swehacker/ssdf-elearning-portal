@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 
 public class CoursePortal {
-    private static final ResourceBundle i18n = ResourceBundle.getBundle("i18n", Locale.getDefault());;
+    private static final ResourceBundle i18n = ResourceBundle.getBundle("i18n", Locale.getDefault());
 
     private CoursePortal() {
     }

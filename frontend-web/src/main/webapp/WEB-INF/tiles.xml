@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+    <!-- Default Main Template -->
+    <definition name=".mainTemplate" template="/WEB-INF/jsp/templates/mainTemplate.jsp">
+        <put-attribute name="title" value="" type="string" />
+        <put-attribute name="jumbotron" value="/WEB-INF/jsp/templates/jumbotron.jsp" />
+        <put-attribute name="topnavigation" value="/WEB-INF/jsp/templates/topnavigation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/templates/footer.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
+    </definition>
+
+    <definition name=".newsTemplate" template="/WEB-INF/jsp/templates/newsTemplate.jsp">
+        <put-attribute name="title" value="" type="string" />
+        <put-attribute name="jumbotron" value="/WEB-INF/jsp/templates/jumbotron.jsp" />
+        <put-attribute name="topnavigation" value="/WEB-INF/jsp/templates/topnavigation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/templates/footer.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
+    </definition>
+
+    <definition name="index" extends=".newsTemplate">
+        <put-attribute name="body" value="/WEB-INF/jsp/start.jsp" />
+    </definition>
+
+    <definition name="learn-to-dive" extends=".newsTemplate">
+        <put-attribute name="title" value="Lär dig dyka" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsp/learn-to-dive.jsp" />
+    </definition>
+
+</tiles-definitions>
