@@ -17,17 +17,17 @@ public class MailConfig {
 
     @Bean
     public JavaMailSender javaMailSender() throws NamingException {
-        // Mail session @ JNDI
+
         JndiObjectFactoryBean factory = new JndiObjectFactoryBean();
         factory.setExpectedType(Session.class);
         factory.setJndiName("java:comp/env/mail/ssdf-mail");
         factory.afterPropertiesSet();
-        // Mail session
+
         Session session = (Session) factory.getObject();
-        // Mail sender
+
         JavaMailSenderImpl sender = new JavaMailSenderImpl();
         sender.setSession(session);
-        // OK
+
         return sender;
     }
 

@@ -1,10 +1,10 @@
 package se.ssdf.elearning.services.config;
 
-import lombok.Data;
+import lombok.Value;
 
-@Data
+@Value
 public class MailSetup {
 
-    private final String replyTo;
+    String replyTo;
 
 }

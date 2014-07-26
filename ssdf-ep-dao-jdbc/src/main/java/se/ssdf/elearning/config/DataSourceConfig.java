@@ -17,7 +17,7 @@ public class DataSourceConfig {
     public DataSource dataSource() throws IllegalArgumentException, NamingException {
         JndiObjectFactoryBean factory = new JndiObjectFactoryBean();
         factory.setExpectedType(DataSource.class);
-        factory.setJndiName("java:comp/env/jdbc/iteach");
+        factory.setJndiName("java:comp/env/jdbc/ssdfdb");
         factory.afterPropertiesSet();
         DataSource dataSource = (DataSource) factory.getObject();
         return dataSource;
