@@ -1,4 +1,4 @@
-package se.ssdf.elearning.utils;
+package se.ssdf.elearning.common;
 
 import junit.framework.TestCase;
 
