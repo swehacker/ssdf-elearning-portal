@@ -2,17 +2,16 @@ package se.ssdf.elearning.services.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import org.springframework.jndi.JndiObjectFactoryBean;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-import se.ssdf.elearning.common.RunProfile;
+import se.ssdf.elearning.common.profiles.Prod;
 
 import javax.mail.Session;
 import javax.naming.NamingException;
 
 @Configuration
-@Profile(RunProfile.PRODUCTION)
+@Prod
 public class MailConfig {
 
     @Bean

@@ -26,8 +26,10 @@
 * JQuery
 * Bootstrap 3
 * REST
+* Lombok http://projectlombok.org/features/index.html
 
 ### Supported Databases
 * H2
 * MySQL
+* MariaDB
 

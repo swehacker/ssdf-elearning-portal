@@ -2,15 +2,18 @@ package se.ssdf.elearning.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
 import org.springframework.jndi.JndiObjectFactoryBean;
-import se.ssdf.elearning.common.RunProfile;
+import se.ssdf.elearning.common.profiles.Acceptance;
+import se.ssdf.elearning.common.profiles.Dev;
+import se.ssdf.elearning.common.profiles.Prod;
 
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
 @Configuration
-@Profile({RunProfile.ACCEPTANCE, RunProfile.DEVELOPMENT, RunProfile.PRODUCTION})
+@Prod
+@Acceptance
+@Dev
 public class DataSourceConfig {
 
     @Bean
