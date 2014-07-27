@@ -21,4 +21,10 @@ elever.
 * Maven 3.1.1 eller senare
 * Git SCM
 
-## Sätta upp produktionsmiljö
+Starta tomcat från Maven
+
+`mvn clean install Tomcat7:run`
+
+*Tomcat manager URL är http://localhost:8080/manager
+*Authentication details of username admin and no password
+*Context path är / för ssdf-ep-web
