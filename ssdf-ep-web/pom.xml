@@ -18,6 +18,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>ssdf-ep-web</finalName>
+        <finalName>ssdf-elearning-portal</finalName>
     </build>
 </project>
