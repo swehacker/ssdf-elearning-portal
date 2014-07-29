@@ -23,7 +23,7 @@ elever.
 
 Starta tomcat från Maven
 
-`mvn clean install Tomcat7:run`
+`mvn clean install tomcat7:run`
 
 *Tomcat manager URL är http://localhost:8080/manager
 *Authentication details of username admin and no password

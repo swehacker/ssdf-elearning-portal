@@ -55,7 +55,7 @@ upstream app_server {
 server {
     listen 443;
     listen [::]:443 default ipv6only=on;
-    server_name www.yourcompany.com;
+    server_name elearning.ssdf.se;
 
     ssl on;
     ssl_certificate /etc/nginx/ssl/server.crt;
@@ -78,7 +78,7 @@ server {
 Link your configuration from sites-available to sites-enabled:
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/iteach /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/<your site> /etc/nginx/sites-enabled/
 ```
 
 Configure Tomcat in proxy mode by editing the `<Connector>` node in `/var/lib/tomcat7/conf/server.xml`:
