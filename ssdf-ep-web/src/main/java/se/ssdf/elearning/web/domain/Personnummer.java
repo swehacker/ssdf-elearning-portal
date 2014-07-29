@@ -1,4 +1,4 @@
-package se.ssdf.elearning.domain;
+package se.ssdf.elearning.web.domain;
 
 import se.ssdf.i18n.I18n;
 

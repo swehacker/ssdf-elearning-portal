@@ -1,4 +1,4 @@
-package se.ssdf.elearning.utils;
+package se.ssdf.elearning.web.utils;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;

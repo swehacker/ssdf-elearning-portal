@@ -1,4 +1,4 @@
-package se.ssdf.elearning.portal;
+package se.ssdf.elearning.web.portal;
 
 import com.opensymphony.xwork2.ActionSupport;
 

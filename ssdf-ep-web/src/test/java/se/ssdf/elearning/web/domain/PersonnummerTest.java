@@ -1,4 +1,4 @@
-package se.ssdf.elearning.domain;
+package se.ssdf.elearning.web.domain;
 
 import org.junit.Test;
 

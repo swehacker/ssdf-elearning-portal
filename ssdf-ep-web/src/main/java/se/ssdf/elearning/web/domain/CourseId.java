@@ -1,4 +1,4 @@
-package se.ssdf.elearning.domain;
+package se.ssdf.elearning.web.domain;
 
 public class CourseId {
     private final double id;

@@ -11,11 +11,19 @@
             <result type="tiles">index</result>
         </action>
 
-        <action name="login" class="se.ssdf.elearning.portal.LoginAction">
+        <action name="login" class="se.ssdf.elearning.web.portal.LoginAction">
             <result type="tiles">index</result>
         </action>
 
-        <action name="learn-to-dive" class="se.ssdf.elearning.portal.LearnToDiveAction">
+        <action name="learn-to-dive" class="se.ssdf.elearning.web.portal.LearnToDiveAction">
+            <result type="tiles">learn-to-dive</result>
+        </action>
+
+        <action name="/admin/learn-to-dive" class="se.ssdf.elearning.web.portal.LearnToDiveAction">
+            <result type="tiles">learn-to-dive</result>
+        </action>
+
+        <action name="/secure/learn-to-dive" class="se.ssdf.elearning.web.portal.LearnToDiveAction">
             <result type="tiles">learn-to-dive</result>
         </action>
     </package>

@@ -1,7 +1,5 @@
 package se.ssdf.elearning.jdbc;
 
-import org.joda.money.Money;
-
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
@@ -40,15 +38,6 @@ public final class SQLUtils {
 
     public static ZonedDateTime getDateTime(Timestamp timestamp) {
         return timestamp != null ? ZonedDateTime.ofInstant(Instant.ofEpochMilli(timestamp.getTime()), ZoneOffset.UTC) : null;
-    }
-
-    public static Money toMoney(ResultSet rs, String column) throws SQLException {
-        String value = rs.getString(column);
-        if (value == null) {
-            return null;
-        } else {
-            return Money.parse(value);
-        }
     }
 
     public static LocalDateTime getLocalDateTimeFromDB(ResultSet rs, String column) throws SQLException {
