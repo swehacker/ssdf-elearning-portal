@@ -14,6 +14,14 @@
         <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
     </definition>
 
+    <!-- Plain Template -->
+    <definition name=".unsecurePlainTemplate" template="/WEB-INF/jsp/templates/unsecure/plainTemplate.jsp">
+        <put-attribute name="title" value="" type="string" />
+        <put-attribute name="topnavigation" value="/WEB-INF/jsp/templates/unsecure/topnavigation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/templates/unsecure/footer.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
+    </definition>
+
     <!-- Default SECURE Main Template -->
     <definition name=".secureMainTemplate" template="/WEB-INF/jsp/templates/secure/mainTemplate.jsp">
         <put-attribute name="title" value="" type="string" />
@@ -39,7 +47,22 @@
         <put-attribute name="body" value="/WEB-INF/jsp/learn-to-dive.jsp" />
     </definition>
 
-    <definition name="login" extends=".unsecureMainTemplate">
+    <definition name="continue-your-journey" extends=".unsecurePlainTemplate">
+        <put-attribute name="title" value="Vidarutbilda dig" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsp/continue-your-journey.jsp" />
+    </definition>
+
+    <definition name="become-instructor" extends=".unsecurePlainTemplate">
+        <put-attribute name="title" value="Utbilda andra" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsp/become-instructor.jsp" />
+    </definition>
+
+    <definition name="start-a-club" extends=".unsecurePlainTemplate">
+        <put-attribute name="title" value="Utbilda andra" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsp/start-a-club.jsp" />
+    </definition>
+
+    <definition name="login" extends=".unsecurePlainTemplate">
         <put-attribute name="title" value="Logga in" type="string" />
         <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
     </definition>

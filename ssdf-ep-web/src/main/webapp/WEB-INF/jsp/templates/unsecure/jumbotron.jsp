@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <div class="jumbotron page-header" style="color: #ffffff; background-color: #00589c; text-shadow: 0 1px 0 rgba(0,0,0,.1);">
     <div class="container">
         <h1>Svenska Sportdykarförbundets Utbildningsportal</h1>

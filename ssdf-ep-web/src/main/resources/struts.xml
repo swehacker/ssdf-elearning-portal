@@ -14,6 +14,15 @@
         <action name="learn-to-dive" class="se.ssdf.elearning.web.portal.LearnToDiveAction">
             <result type="tiles">learn-to-dive</result>
         </action>
+        <action name="continue-your-journey" class="se.ssdf.elearning.web.portal.ContinueYourJourneyAction">
+            <result type="tiles">continue-your-journey</result>
+        </action>
+        <action name="become-instructor" class="se.ssdf.elearning.web.portal.BecomeInstructorAction">
+            <result type="tiles">become-instructor</result>
+        </action>
+        <action name="start-a-club" class="se.ssdf.elearning.web.portal.StartClubAction">
+            <result type="tiles">start-a-club</result>
+        </action>
 
         <action name="login" class="se.ssdf.elearning.web.portal.LoginAction">
             <result type="tiles">login</result>

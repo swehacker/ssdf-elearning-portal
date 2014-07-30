@@ -10,7 +10,7 @@
         <!--form-login login-page="/login"
                     authentication-failure-url="/login?login_error=true"
                     default-target-url="/secure/welcome"/-->
-        <form-login default-target-url="/secure/welcome" authentication-failure-url="/login?login_error=true" />
+        <form-login login-page="/login.action" default-target-url="/secure/welcome" authentication-failure-url="/login?error=true" />
         <logout logout-url="/logout" logout-success-url="/" invalidate-session="true" />
 
         <!-- Configure these elements to secure URIs in your application -->

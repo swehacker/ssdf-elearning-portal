@@ -21,7 +21,7 @@
                 <button type="submit" class="btn btn-success">Login</button>
             <!--/s:form-->
             <div class="navbar-right">
-                <s:a action="logout" cssClass="btn btn-primary btn-sm" role="button">Logga ut</s:a>
+                <s:a action="/logout" cssClass="btn btn-primary btn-sm" role="button">Logga ut</s:a>
             </div>
         </nav>
     </div>

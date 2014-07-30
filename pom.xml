@@ -19,8 +19,8 @@
 
 
     <properties>
-        <project.version>1.0-SNAPSHOT</project.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.version>1.0-SNAPSHOT</project.version>
         <spring.version>4.0.6.RELEASE</spring.version>
         <spring-security.version>3.2.2.RELEASE</spring-security.version>
         <struts.version>2.3.16.2</struts.version>

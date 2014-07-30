@@ -1,4 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <div class="navbar navbar-default" role="navigation">
     <div class="container">
@@ -11,13 +10,13 @@
                     <s:a action="learn-to-dive">Börja dyka!</s:a>
                 </li>
                 <li>
-                    <a href="#learn-more">Vidarutbilda dig</a>
+                    <s:a action="continue-your-journey">Vidarutbilda dig</s:a>
                 </li>
                 <li>
-                    <a href="#go-leader">Utbilda andra</a>
+                    <s:a action="become-instructor">Utbilda andra</s:a>
                 </li>
                 <li>
-                    <a href="#go-leader">Starta klubb</a>
+                    <s:a action="start-a-club">Starta klubb</s:a>
                 </li>
             </ul>
             <!--s:form cssClass="navbar-form navbar-right" role="form" action="login">

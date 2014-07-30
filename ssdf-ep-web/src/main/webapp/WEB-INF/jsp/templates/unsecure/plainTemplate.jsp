@@ -19,7 +19,6 @@
 </head>
 <body>
 <tiles:insertAttribute name="topnavigation"/>
-<tiles:insertAttribute name="jumbotron"/>
 <tiles:insertAttribute name="body"/>
 <tiles:insertAttribute name="footer"/>
 <!-- Bootstrap core JavaScript

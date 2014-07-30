@@ -15,7 +15,9 @@
     <link href="/css/ssdf.css" rel="stylesheet">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.min.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
 </head>
 <body>
 <tiles:insertAttribute name="topnavigation"/>
