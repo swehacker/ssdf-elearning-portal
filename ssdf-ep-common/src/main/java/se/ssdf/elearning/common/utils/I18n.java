@@ -1,4 +1,4 @@
-package se.ssdf.elearning.common;
+package se.ssdf.elearning.common.utils;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
