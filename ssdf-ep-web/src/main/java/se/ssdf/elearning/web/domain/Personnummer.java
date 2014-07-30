@@ -1,6 +1,6 @@
 package se.ssdf.elearning.web.domain;
 
-import se.ssdf.i18n.I18n;
+import se.ssdf.elearning.common.I18n;
 
 import java.io.Serializable;
 import java.text.ParsePosition;
