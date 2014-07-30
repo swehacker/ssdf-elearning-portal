@@ -11,9 +11,11 @@
           content="Dyka, dykning, sportdykning, fridykning, apnea, uv-rugby, undervattens sport, tävling, utbildning, kurser, cmas, SSDF">
     <meta name="author" content="Patrik Falk">
     <title>SSDF's Utbildningsportal - <tiles:getAsString name="title"/></title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/ssdf.css" rel="stylesheet">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.ico">
+    <![endif]-->
 </head>
 <body>
 <tiles:insertAttribute name="topnavigation"/>
@@ -24,6 +26,6 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="../../dist/js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
