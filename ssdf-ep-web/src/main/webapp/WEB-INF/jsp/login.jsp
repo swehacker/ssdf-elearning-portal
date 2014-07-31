@@ -9,10 +9,19 @@
         </div>
         <%} %>
 
-        <form class="form-signin" action="<s:url value='/j_spring_security_check'/>" method='POST' role="form">
+        <% String logout = request.getParameter("logout");
+            if (logout != null) {
+        %>
+        <div class="errorblock form-signin">
+            Du är nu utloggad.
+        </div>
+        <%} %>
+
+        <form class="form-signin" action="<s:url value='/login'/>" method='POST' role="form">
             <h2 class="form-signin-heading">Inloggning</h2>
-            <input class="form-control" type='text' name='j_username' placeholder="Användarnamn" required autofocus>
-            <input class="form-control" type='password' name='j_password' placeholder="Lösenord" />
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            <input class="form-control" type='text' name='username' placeholder="Användarnamn" required autofocus>
+            <input class="form-control" type='password' name='password' placeholder="Lösenord" />
             <button class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
         </form>
     </div>

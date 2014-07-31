@@ -5,16 +5,15 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jndi.JndiObjectFactoryBean;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-import se.ssdf.elearning.common.profiles.Prod;
+import se.ssdf.elearning.utils.profiles.Prod;
 
 import javax.mail.Session;
 import javax.naming.NamingException;
 
 @Configuration
-@Prod
 public class MailConfig {
 
-    @Bean
+    /*@Bean
     public JavaMailSender javaMailSender() throws NamingException {
 
         JndiObjectFactoryBean factory = new JndiObjectFactoryBean();
@@ -40,6 +39,6 @@ public class MailConfig {
 
         String replyTo = (String) factory.getObject();
         return new MailSetup(replyTo);
-    }
+    }  */
 
 }
