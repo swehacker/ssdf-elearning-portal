@@ -1,6 +1,4 @@
-package se.ssdf.elearning.common;
-
-import se.ssdf.domain.Personnummer;
+package se.ssdf.elearning;
 
 public class Person {
     String firstName;

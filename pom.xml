@@ -10,6 +10,7 @@
         <module>ssdf-ep-dao</module>
         <module>ssdf-ep-dao-jdbc</module>
         <module>ssdf-ep-services</module>
+        <module>ssdf-ep-services-certificate</module>
         <module>ssdf-ep-web</module>
     </modules>
     <packaging>pom</packaging>

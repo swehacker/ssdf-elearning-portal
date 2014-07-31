@@ -1,4 +1,4 @@
-package se.ssdf.elearning.common.utils;
+package se.ssdf.elearning.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

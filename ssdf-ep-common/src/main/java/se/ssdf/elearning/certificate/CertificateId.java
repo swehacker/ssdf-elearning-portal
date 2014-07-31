@@ -1,4 +1,4 @@
-package se.ssdf.elearning.common;
+package se.ssdf.elearning.certificate;
 
 public interface CertificateId {
     String getId();

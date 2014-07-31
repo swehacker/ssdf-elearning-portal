@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jndi.JndiObjectFactoryBean;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-import se.ssdf.elearning.common.profiles.Prod;
+import se.ssdf.elearning.utils.profiles.Prod;
 
 import javax.mail.Session;
 import javax.naming.NamingException;

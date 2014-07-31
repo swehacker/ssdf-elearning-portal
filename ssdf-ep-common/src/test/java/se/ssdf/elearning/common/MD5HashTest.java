@@ -1,7 +1,7 @@
 package se.ssdf.elearning.common;
 
 import junit.framework.TestCase;
-import se.ssdf.elearning.common.utils.MD5Hash;
+import se.ssdf.elearning.utils.MD5Hash;
 
 public class MD5HashTest extends TestCase {
 

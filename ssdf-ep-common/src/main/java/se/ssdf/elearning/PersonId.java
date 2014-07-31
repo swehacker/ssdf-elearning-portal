@@ -1,4 +1,4 @@
-package se.ssdf.elearning.common;
+package se.ssdf.elearning;
 
 public interface PersonId {
     String getId();

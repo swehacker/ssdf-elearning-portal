@@ -1,4 +1,4 @@
-package se.ssdf.elearning.common.profiles;
+package se.ssdf.elearning.utils.profiles;
 
 import org.springframework.context.annotation.Profile;
 

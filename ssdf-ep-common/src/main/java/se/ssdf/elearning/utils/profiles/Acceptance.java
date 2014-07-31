@@ -1,4 +1,4 @@
-package se.ssdf.elearning.common.profiles;
+package se.ssdf.elearning.utils.profiles;
 
 import org.springframework.context.annotation.Profile;
 
@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Profile("prod")
-public @interface Prod {
+@Profile("acceptance")
+public @interface Acceptance {
 }
