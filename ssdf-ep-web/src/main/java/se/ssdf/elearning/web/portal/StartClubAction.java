@@ -1,9 +1,6 @@
 package se.ssdf.elearning.web.portal;
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-import se.ssdf.elearning.services.CertificateService;
 
 import java.util.Random;
 

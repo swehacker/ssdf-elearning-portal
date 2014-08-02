@@ -3,9 +3,6 @@ package se.ssdf.elearning.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jndi.JndiObjectFactoryBean;
-import se.ssdf.elearning.utils.profiles.Acceptance;
-import se.ssdf.elearning.utils.profiles.Dev;
-import se.ssdf.elearning.utils.profiles.Prod;
 
 import javax.naming.NamingException;
 import javax.sql.DataSource;

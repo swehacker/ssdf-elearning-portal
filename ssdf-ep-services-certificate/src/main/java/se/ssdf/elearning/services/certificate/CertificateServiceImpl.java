@@ -2,8 +2,6 @@ package se.ssdf.elearning.services.certificate;
 
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Configurable;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import se.ssdf.elearning.Administrator;
 import se.ssdf.elearning.ImageSrc;
