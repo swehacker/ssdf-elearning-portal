@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 @Configuration
 public class DataSourceConfig {
 
-    @Bean
+    @Bean(name = "dataSource")
     public DataSource dataSource() throws IllegalArgumentException, NamingException {
         JndiObjectFactoryBean factory = new JndiObjectFactoryBean();
         factory.setExpectedType(DataSource.class);
