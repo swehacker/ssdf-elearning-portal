@@ -32,9 +32,12 @@ public class CertificateRepositoryJDBC implements CertificateRepository {
 
         try (Connection conn = dataSource.getConnection()) {
             Statement stmt = conn.createStatement();
-            log.debug("CREATE TABLE CERTIFICATE: " + (stmt.execute(SQL.CERTIFICATE_DB_CREATE) ? "CREATED" : "ALREADY EXIST"));
-            log.debug("CREATE TABLE CERTSTATUS: " + (stmt.execute(SQL.CERTSTATUS_DB_CREATE) ? "CREATED" : "ALREADY EXIST"));
-            log.debug("CREATE TABLE CERTTYPE: " + (stmt.execute(SQL.CERTTYPE_DB_CREATE) ? "CREATED" : "ALREADY EXIST"));
+            boolean status = stmt.execute(SQL.CERTIFICATE_DB_CREATE);
+            log.debug("CREATE TABLE CERTIFICATE: " + (status ? "CREATED" : "ALREADY EXIST"));
+            status = stmt.execute(SQL.CERTSTATUS_DB_CREATE);
+            log.debug("CREATE TABLE CERTSTATUS: " + (status ? "CREATED" : "ALREADY EXIST"));
+            status = stmt.execute(SQL.CERTTYPE_DB_CREATE);
+            log.debug("CREATE TABLE CERTTYPE: " + (status ? "CREATED" : "ALREADY EXIST"));
         } catch (SQLException sqle) {
             throw new RepositoryException(sqle);
         }
