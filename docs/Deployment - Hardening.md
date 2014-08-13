@@ -1,6 +1,6 @@
 # Hardening
 
-##Enabling the firewall:
+## Enabling the firewall:
 
 ```bash
 sudo ufw enable
@@ -10,6 +10,12 @@ sudo ufw enable
 
 ```bash
 sudo ufw allow ssh
+```
+
+### Opening the HTTP port:
+
+```bash
+sudo ufw allow http
 ```
 
 ### Opening the SSL port:
