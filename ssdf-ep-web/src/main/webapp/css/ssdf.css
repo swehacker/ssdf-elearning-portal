@@ -40,3 +40,17 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
+.jumbotron {
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #00589c;
+    text-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: rgba(0,0,0,.1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

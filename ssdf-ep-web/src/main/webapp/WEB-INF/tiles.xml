@@ -26,7 +26,7 @@
     <definition name=".secureMainTemplate" template="/WEB-INF/jsp/templates/secure/mainTemplate.jsp">
         <put-attribute name="title" value="" type="string" />
         <put-attribute name="topnavigation" value="/WEB-INF/jsp/templates/secure/topnavigation.jsp" />
-        <put-attribute name="footer" value="/WEB-INF/jsp/templates/secure/footer.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/jsp/templates/unsecure/footer.jsp" />
         <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
     </definition>
 
