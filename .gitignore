@@ -7,3 +7,4 @@ target/
 .DS_Store
 .release
 work
+context.xml

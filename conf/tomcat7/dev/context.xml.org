@@ -32,12 +32,12 @@
               mail.debug="false"
               mail.smtp.auth="true"
               mail.smtp.starttls.required="true"
-              mail.user="ssdf.test@gmail.com"
-              password="0nlyf0rt3st" />
+              mail.user="noreply@ssdf.se"
+              password="password" />
 
     <!-- Reply-to address -->
     <Environment name="value/replyto"
-                 value="ssdf.test@gmail.com"
+                 value="info@ssdf.se"
                  type="java.lang.String"
             />
 
