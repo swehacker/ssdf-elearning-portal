@@ -67,6 +67,11 @@
         <put-attribute name="body" value="/WEB-INF/jsp/login.jsp" />
     </definition>
 
+    <definition name="order-certificate" extends=".unsecurePlainTemplate">
+        <put-attribute name="title" value="Certifikat beställning" type="string" />
+        <put-attribute name="body" value="/WEB-INF/jsp/order-certificate.jsp" />
+    </definition>
+
     <definition name="secure/welcome" extends=".secureMainTemplate">
         <put-attribute name="title" value="Inloggad" type="string" />
         <put-attribute name="body" value="/WEB-INF/jsp/secure/welcome.jsp" />

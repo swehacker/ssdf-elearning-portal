@@ -24,6 +24,10 @@
             <result type="tiles">start-a-club</result>
         </action>
 
+        <action name="order-certificate" class="se.ssdf.elearning.web.portal.OrderCertificateAction">
+            <result type="tiles">order-certificate</result>
+        </action>
+
         <action name="login" class="se.ssdf.elearning.web.portal.LoginAction">
             <result type="tiles">login</result>
         </action>
