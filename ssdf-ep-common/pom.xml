@@ -12,4 +12,11 @@
 
     <name>SSDF eLearning Portal COMMON</name>
     <url>http://www.ssdf.se</url>
+    <dependencies>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+    </dependencies>
 </project>
