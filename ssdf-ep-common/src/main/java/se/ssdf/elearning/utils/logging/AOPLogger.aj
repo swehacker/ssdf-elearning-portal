@@ -1,44 +1,46 @@
 package se.ssdf.elearning.utils.logging;
 
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
 import org.aspectj.lang.JoinPoint.StaticPart;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 
 @Aspect
+@Component
 public class AOPLogger {
 
-    @Around(value = "execution(@se.ssdf.elearning.utils.logging.LogMethodCall * *(..)) && @annotation(loggingMethodCall)", argNames = "loggingMethodCall")
-    public Object logMethod(ProceedingJoinPoint pjp, LogMethodCall loggingMethodCall) throws Throwable {
-        Level level = Level.toLevel(loggingMethodCall.level());
+    @Around(value = "execution(@se.ssdf.elearning.utils.logging.LogMethodCall * *(..)) && @annotation(LogMethodCall)", argNames = "pjp, logMethodCall")
+    public Object logMethod(ProceedingJoinPoint pjp, LogMethodCall logMethodCall) throws Throwable {
+        Level level = Level.toLevel(logMethodCall.level());
         StaticPart sp = pjp.getStaticPart();
         String classname = sp.getSignature().getDeclaringTypeName();
         Object[] args = pjp.getArgs();
-        boolean enabledForLevel = Logger.getLogger(classname).isEnabledFor(level);
+        boolean enabledForLevel = LogManager.getLogger(classname).isEnabled(level);
 
-        if (enabledForLevel && loggingMethodCall.entry()) {
+        if (enabledForLevel && logMethodCall.entry()) {
             String enterMsg = "ENTERING: "
-                    + loggingMethodCall.prefix()
+                    + logMethodCall.prefix()
                     + pjp.getSignature().toShortString()
-                    + loggingMethodCall.suffix();
+                    + logMethodCall.suffix();
             String parmsMsg = "\tPARAMS: " + Arrays.toString(args);
-            Logger.getLogger(classname).log(level, enterMsg);
-            Logger.getLogger(classname).log(level, parmsMsg);
+            LogManager.getLogger(classname).log(level, enterMsg);
+            LogManager.getLogger(classname).log(level, parmsMsg);
         }
         Object methodResult = pjp.proceed();
-        if (enabledForLevel && loggingMethodCall.exit()) {
+        if (enabledForLevel && logMethodCall.exit()) {
             String exitMsg = "EXITING: "
-                    + loggingMethodCall.prefix()
+                    + logMethodCall.prefix()
                     + pjp.getSignature().toShortString()
-                    + loggingMethodCall.suffix();
+                    + logMethodCall.suffix();
             String rtrnMsg = "\tRETURNING: "
                     + (methodResult == null ? "null" : methodResult.toString());
-            Logger.getLogger(classname).log(level, exitMsg);
-            Logger.getLogger(classname).log(level, rtrnMsg);
+            LogManager.getLogger(classname).log(level, exitMsg);
+            LogManager.getLogger(classname).log(level, rtrnMsg);
         }
         return methodResult;
     }

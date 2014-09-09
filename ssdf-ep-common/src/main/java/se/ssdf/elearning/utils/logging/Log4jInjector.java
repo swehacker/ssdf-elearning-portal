@@ -1,6 +1,7 @@
 package se.ssdf.elearning.utils.logging;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
@@ -20,7 +21,7 @@ public class Log4jInjector implements BeanPostProcessor {
                 // make the field accessible if defined private
                 ReflectionUtils.makeAccessible(field);
                 if (field.getAnnotation(Log4j.class) != null) {
-                    Logger log = Logger.getLogger(bean.getClass());
+                    Logger log = LogManager.getLogger(bean.getClass());
                     field.set(bean, log);
                 }
             }
