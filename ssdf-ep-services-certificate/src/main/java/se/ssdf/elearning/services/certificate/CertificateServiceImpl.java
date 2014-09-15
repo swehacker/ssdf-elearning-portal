@@ -13,6 +13,7 @@ import se.ssdf.elearning.certificate.CertificateType;
 import se.ssdf.elearning.exception.RepositoryException;
 import se.ssdf.elearning.services.CertificateService;
 import se.ssdf.elearning.utils.logging.Log4j;
+import se.ssdf.elearning.utils.logging.LogMethodCall;
 
 import java.util.Date;
 import java.util.List;
