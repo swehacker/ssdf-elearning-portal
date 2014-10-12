@@ -1,4 +1,4 @@
-package se.ssdf.elearning.config;
+package se.ssdf.elearning.web.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
