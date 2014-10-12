@@ -1,4 +1,4 @@
-package se.ssdf.elearning.jdbc;
+package se.ssdf.elearning.utils.sql;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
