@@ -1,13 +1,13 @@
 package se.ssdf.elearning.services.certificate.jdbc;
 
-import lombok.extern.log4j.Log4j;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import se.ssdf.elearning.certificate.Certificate;
 import se.ssdf.elearning.certificate.Status;
 import se.ssdf.elearning.exception.RepositoryException;
 import se.ssdf.elearning.services.certificate.CertificateRepository;
+import se.ssdf.elearning.utils.logging.Log4j;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -17,7 +17,8 @@ import java.sql.Statement;
 
 @Service
 public class CertificateRepositoryJDBC implements CertificateRepository {
-    private static final Logger log = Logger.getLogger(CertificateRepository.class);
+    @Log4j
+    private static Logger log;
 
     private DataSource dataSource;
 
@@ -48,7 +49,10 @@ public class CertificateRepositoryJDBC implements CertificateRepository {
     @Override
     public Certificate create(Certificate certificate, Status status) throws RepositoryException {
         try (Connection conn = dataSource.getConnection()) {
+            // certid, certtype, personnr, firstname, lastname, instructor, creation_date
             PreparedStatement pstmt = conn.prepareStatement(SQL.CERTIFICATE_INSERT);
+            pstmt.setString(1, certificate.getCertificateId().getId());
+            pstmt.setString(2, certificate.getCertificateType().toString());
         } catch (SQLException sqle) {
             throw new RepositoryException(sqle);
         }

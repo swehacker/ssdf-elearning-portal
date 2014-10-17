@@ -1,12 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="sv">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Svenska Sportdykarförbundets Utbildningsportal">
+    <meta name="description" content="Svenska SportdykarfÃ¶rbundets Utbildningsportal">
     <meta name="keywords"
-          content="Dyka, dykning, sportdykning, fridykning, apnea, uv-rugby, undervattens sport, tävling, utbildning, kurser, cmas, SSDF">
+          content="Dyka, dykning, sportdykning, fridykning, apnea, uv-rugby, undervattens sport, tï¿½vling, utbildning, kurser, cmas, SSDF">
     <meta name="author" content="Patrik Falk">
     <title>SSDF's Utbildningsportal - <tiles:getAsString name="title"/></title>
     <link href="/css/bootstrap.min.css" rel="stylesheet">

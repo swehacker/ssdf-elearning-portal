@@ -1,6 +1,6 @@
 package se.ssdf.elearning.services.certificate;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import se.ssdf.elearning.Administrator;
@@ -12,13 +12,16 @@ import se.ssdf.elearning.certificate.CertificateId;
 import se.ssdf.elearning.certificate.CertificateType;
 import se.ssdf.elearning.exception.RepositoryException;
 import se.ssdf.elearning.services.CertificateService;
+import se.ssdf.elearning.utils.logging.Log4j;
+import se.ssdf.elearning.utils.logging.LogMethodCall;
 
 import java.util.Date;
 import java.util.List;
 
 @Service(value = "CertificateService")
 public class CertificateServiceImpl implements CertificateService {
-    private static final Logger log = Logger.getLogger(CertificateService.class);
+    @Log4j
+    private static Logger log;
 
     private CertificateRepository certificateRepository;
 
