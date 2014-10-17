@@ -49,7 +49,10 @@ public class CertificateRepositoryJDBC implements CertificateRepository {
     @Override
     public Certificate create(Certificate certificate, Status status) throws RepositoryException {
         try (Connection conn = dataSource.getConnection()) {
+            // certid, certtype, personnr, firstname, lastname, instructor, creation_date
             PreparedStatement pstmt = conn.prepareStatement(SQL.CERTIFICATE_INSERT);
+            pstmt.setString(1, certificate.getCertificateId().getId());
+            pstmt.setString(2, certificate.getCertificateType().toString());
         } catch (SQLException sqle) {
             throw new RepositoryException(sqle);
         }
