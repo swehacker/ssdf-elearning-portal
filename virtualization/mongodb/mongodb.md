@@ -8,6 +8,9 @@ You need to install docker which you can find at [Docker]. Docker is using Linux
 
 If you are having problems with OS X you can go to the trouble shooting section.
 
+### HEADS UP
+I have omitted `sudo`from the commands because it is used on Linux but not on OS X.
+
 ## First time
 Go to this directory and run the following command to build the mongodb image
 ```
