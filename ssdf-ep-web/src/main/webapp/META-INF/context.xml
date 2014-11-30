@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context sessionCookiePath="/">
 
-    <!-- JDBC datasource -->
+    <!-- JDBC datasource
     <Resource name="jdbc/ssdfdb"
               auth="Container"
               type="javax.sql.DataSource"
@@ -22,7 +22,7 @@
               password="ssdf"
               driverClassName="org.h2.Driver"
               url="jdbc:h2:/opt/ssdf-elearning/db/data;AUTOCOMMIT=OFF;MODE=MySQL"
-            />
+            />-->
 
     <!-- Mail session -->
     <!-- In the mail session definition, replace the email address and the password accordingly -->
