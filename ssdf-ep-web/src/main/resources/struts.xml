@@ -27,10 +27,6 @@
             <result type="tiles">start-a-club</result>
         </action>
 
-        <action name="order-certificate" class="se.ssdf.elearning.web.portal.OrderCertificateAction">
-            <result type="tiles">order-certificate</result>
-        </action>
-
         <action name="register" class="se.ssdf.elearning.web.portal.RegisterAction">
             <result type="tiles">register</result>
         </action>
@@ -47,6 +43,10 @@
     <package name="secure" extends="tiles-default" namespace="/secure">
         <action name="welcome" class="se.ssdf.elearning.web.portal.LearnToDiveAction">
             <result type="tiles">secure/welcome</result>
+        </action>
+
+        <action name="order-certificate" class="se.ssdf.elearning.web.portal.OrderCertificateAction">
+            <result type="tiles">secure/order-certificate</result>
         </action>
     </package>
 </struts>
