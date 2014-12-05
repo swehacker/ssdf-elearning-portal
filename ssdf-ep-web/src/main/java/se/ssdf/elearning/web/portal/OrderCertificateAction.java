@@ -2,6 +2,8 @@ package se.ssdf.elearning.web.portal;
 
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.logging.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import se.ssdf.elearning.services.CertificateService;
 import se.ssdf.elearning.utils.logging.Log4j;
 import se.ssdf.elearning.utils.logging.LogMethodCall;
@@ -14,13 +16,12 @@ public class OrderCertificateAction extends ActionSupport {
     private static Logger LOGGER;
     private long test = new Random().nextLong();
 
-    @Resource
+    @Autowired
     private CertificateService certificateService;
 
     @Override
     @LogMethodCall
     public String execute() throws Exception {
-        //certificateService.order(null, null, null, null);
         LOGGER.debug("SAY HELLO TO MY LITTLE FRIEND");
 
         return SUCCESS;

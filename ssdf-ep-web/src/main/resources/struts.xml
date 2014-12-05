@@ -5,6 +5,9 @@
 
 <struts>
     <constant name="struts.devMode" value="true"/>
+    <constant name="struts.convention.action.suffix" value="Controller"/>
+    <constant name="struts.convention.action.mapAllMatches" value="true"/>
+    <constant name="struts.convention.default.parent.package" value="rest-default"/>
 
     <package name="ssdf" extends="tiles-default" namespace="/">
         <action name="index">
@@ -26,6 +29,10 @@
 
         <action name="order-certificate" class="se.ssdf.elearning.web.portal.OrderCertificateAction">
             <result type="tiles">order-certificate</result>
+        </action>
+
+        <action name="register" class="se.ssdf.elearning.web.portal.RegisterAction">
+            <result type="tiles">register</result>
         </action>
 
         <action name="login" class="se.ssdf.elearning.web.portal.LoginAction">

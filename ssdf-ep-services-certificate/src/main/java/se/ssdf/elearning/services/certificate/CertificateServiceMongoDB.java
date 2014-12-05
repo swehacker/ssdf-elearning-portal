@@ -1,6 +1,7 @@
 package se.ssdf.elearning.services.certificate;
 
 
+import org.springframework.stereotype.Service;
 import se.ssdf.elearning.Administrator;
 import se.ssdf.elearning.ImageSrc;
 import se.ssdf.elearning.Instructor;
@@ -13,6 +14,7 @@ import se.ssdf.elearning.services.CertificateService;
 import java.util.Date;
 import java.util.List;
 
+@Service(value = "CertificateService")
 public class CertificateServiceMongoDB implements CertificateService {
     @Override
     public Certificate order(Student student, Instructor instructor, CertificateId certificateId, ImageSrc imageSrc) {

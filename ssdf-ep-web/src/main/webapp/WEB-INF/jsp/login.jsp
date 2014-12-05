@@ -23,6 +23,7 @@
             <input class="form-control" type='text' name='username' placeholder="Användarnamn" required autofocus>
             <input class="form-control" type='password' name='password' placeholder="Lösenord" />
             <button class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
+            <button class="btn btn-lg btn-block" type="button" onclick="window.location='<s:url value='/register' />'">Registrera dig</button>
         </form>
     </div>
 </div>
