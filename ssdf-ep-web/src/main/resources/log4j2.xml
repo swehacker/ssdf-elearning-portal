@@ -9,8 +9,6 @@
         <logger name="se.ssdf.elearning" level="DEBUG" />
         <logger name="org.springframework" level="INFO" />
         <logger name="org.apache.commons" level="INFO" />
-        <logger name="org.apache.struts2" level="INFO" />
-        <logger name="com.opensymphony" level="WARN" />
         <Root level="WARN">
             <AppenderRef ref="CONSOLE"/>
         </Root>
