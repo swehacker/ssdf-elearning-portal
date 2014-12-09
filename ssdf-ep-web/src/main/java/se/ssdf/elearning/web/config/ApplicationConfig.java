@@ -4,6 +4,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Import;
 
 @ComponentScan(basePackages = { "se.ssdf.elearning" })
-@Import({ WebSecurityConfig.class, WebConfig.class, DatabaseConfig.class })
+@Import({ WebConfig.class, WebSecurityConfig.class, DatabaseConfig.class })
 public class ApplicationConfig {
 }
