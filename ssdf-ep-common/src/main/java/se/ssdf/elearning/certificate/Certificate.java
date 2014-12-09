@@ -1,8 +1,8 @@
 package se.ssdf.elearning.certificate;
 
-import se.ssdf.elearning.Administrator;
-import se.ssdf.elearning.Instructor;
-import se.ssdf.elearning.Student;
+import se.ssdf.elearning.users.roles.Administrator;
+import se.ssdf.elearning.users.roles.Instructor;
+import se.ssdf.elearning.users.roles.Student;
 
 import java.util.Date;
 

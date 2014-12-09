@@ -1,9 +1,9 @@
 package se.ssdf.elearning.course;
 
 import se.ssdf.elearning.Email;
-import se.ssdf.elearning.Instructor;
+import se.ssdf.elearning.users.roles.Instructor;
 import se.ssdf.elearning.PhoneNumber;
-import se.ssdf.elearning.Student;
+import se.ssdf.elearning.users.roles.Student;
 
 import java.util.Date;
 import java.util.List;

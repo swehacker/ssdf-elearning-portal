@@ -1,6 +1,6 @@
 package se.ssdf.elearning.services;
 
-import se.ssdf.elearning.User;
+import se.ssdf.elearning.users.User;
 import se.ssdf.elearning.exception.AlreadyExistException;
 import se.ssdf.elearning.exception.PasswordException;
 

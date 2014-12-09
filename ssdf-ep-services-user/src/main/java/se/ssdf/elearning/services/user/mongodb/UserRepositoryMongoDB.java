@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Service;
-import se.ssdf.elearning.User;
+import se.ssdf.elearning.users.User;
 import se.ssdf.elearning.services.user.UserRepository;
 
 @Service(value = "userRepository")

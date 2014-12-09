@@ -3,7 +3,7 @@
 <div class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <s:a action="index" cssClass="navbar-brand">Utbildningsportalen</s:a>
+            <s:a action="index" cssClass="navbar-brand" cssStyle="padding-bottom: 0px !important; padding-top: 0px !important;"><img src="images/delfin.png" style="padding-right: 10px;">Utbildningsportalen</s:a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
             <ul class="nav navbar-nav">

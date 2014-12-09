@@ -1,9 +1,9 @@
 package se.ssdf.elearning.services;
 
-import se.ssdf.elearning.Administrator;
+import se.ssdf.elearning.users.roles.Administrator;
 import se.ssdf.elearning.ImageSrc;
-import se.ssdf.elearning.Instructor;
-import se.ssdf.elearning.Student;
+import se.ssdf.elearning.users.roles.Instructor;
+import se.ssdf.elearning.users.roles.Student;
 import se.ssdf.elearning.certificate.Certificate;
 import se.ssdf.elearning.certificate.CertificateId;
 import se.ssdf.elearning.certificate.CertificateType;

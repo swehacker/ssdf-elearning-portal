@@ -1,7 +1,7 @@
 package se.ssdf.elearning.services.user.mongodb;
 
 import org.springframework.data.mongodb.core.mapping.Document;
-import se.ssdf.elearning.User;
+import se.ssdf.elearning.users.User;
 
 @Document(collection = "users")
 public class UserDO implements User {

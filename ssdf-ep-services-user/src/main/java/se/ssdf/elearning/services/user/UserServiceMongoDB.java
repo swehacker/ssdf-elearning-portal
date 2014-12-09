@@ -2,7 +2,7 @@ package se.ssdf.elearning.services.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import se.ssdf.elearning.User;
+import se.ssdf.elearning.users.User;
 import se.ssdf.elearning.exception.AlreadyExistException;
 import se.ssdf.elearning.exception.PasswordException;
 import se.ssdf.elearning.services.UserService;

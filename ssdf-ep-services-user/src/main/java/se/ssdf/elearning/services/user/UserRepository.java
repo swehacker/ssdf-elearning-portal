@@ -1,6 +1,6 @@
 package se.ssdf.elearning.services.user;
 
-import se.ssdf.elearning.User;
+import se.ssdf.elearning.users.User;
 
 public interface UserRepository {
     /**
