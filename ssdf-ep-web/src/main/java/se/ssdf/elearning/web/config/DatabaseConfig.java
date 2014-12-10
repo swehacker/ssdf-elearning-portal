@@ -10,15 +10,13 @@ import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 @Configuration
 public class DatabaseConfig {
 
-    public
     @Bean
-    MongoDbFactory mongoDbFactory() throws Exception {
+    public MongoDbFactory mongoDbFactory() throws Exception {
         return new SimpleMongoDbFactory(new MongoClient(), "ssdfdb");
     }
 
-    public
     @Bean
-    MongoTemplate mongoTemplate() throws Exception {
+    public MongoTemplate mongoTemplate() throws Exception {
         MongoTemplate mongoTemplate = new MongoTemplate(mongoDbFactory());
         return mongoTemplate;
     }

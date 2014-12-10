@@ -6,40 +6,40 @@
 <tiles-definitions>
 
     <!-- Default Main Template -->
-    <definition name=".unsecureMainTemplate" template="/WEB-INF/jsp/templates/unsecure/mainTemplate.jsp">
+    <definition name=".unsecureMainTemplate" template="/WEB-INF/tiles/templates/unsecure/mainTemplate.jsp">
         <put-attribute name="title" value="" type="string" />
-        <put-attribute name="jumbotron" value="/WEB-INF/jsp/templates/unsecure/jumbotron.jsp" />
-        <put-attribute name="topnavigation" value="/WEB-INF/jsp/templates/unsecure/topnavigation.jsp" />
-        <put-attribute name="footer" value="/WEB-INF/jsp/templates/unsecure/footer.jsp" />
-        <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
+        <put-attribute name="jumbotron" value="/WEB-INF/tiles/templates/unsecure/jumbotron.jsp" />
+        <put-attribute name="topnavigation" value="/WEB-INF/tiles/templates/unsecure/topnavigation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/tiles/templates/unsecure/footer.jsp" />
+        <put-attribute name="body" value="/WEB-INF/tiles/templates/blank.jsp" />
     </definition>
 
     <!-- Plain Template -->
-    <definition name=".unsecurePlainTemplate" template="/WEB-INF/jsp/templates/unsecure/plainTemplate.jsp">
+    <definition name=".unsecurePlainTemplate" template="/WEB-INF/tiles/templates/unsecure/plainTemplate.jsp">
         <put-attribute name="title" value="" type="string" />
-        <put-attribute name="topnavigation" value="/WEB-INF/jsp/templates/unsecure/topnavigation.jsp" />
-        <put-attribute name="footer" value="/WEB-INF/jsp/templates/unsecure/footer.jsp" />
-        <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
+        <put-attribute name="topnavigation" value="/WEB-INF/tiles/templates/unsecure/topnavigation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/tiles/templates/unsecure/footer.jsp" />
+        <put-attribute name="body" value="/WEB-INF/tiles/templates/blank.jsp" />
     </definition>
 
     <!-- Default SECURE Main Template -->
-    <definition name=".secureMainTemplate" template="/WEB-INF/jsp/templates/secure/mainTemplate.jsp">
+    <definition name=".secureMainTemplate" template="/WEB-INF/tiles/templates/secure/mainTemplate.jsp">
         <put-attribute name="title" value="" type="string" />
-        <put-attribute name="topnavigation" value="/WEB-INF/jsp/templates/secure/topnavigation.jsp" />
-        <put-attribute name="footer" value="/WEB-INF/jsp/templates/unsecure/footer.jsp" />
-        <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
+        <put-attribute name="topnavigation" value="/WEB-INF/tiles/templates/secure/topnavigation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/tiles/templates/unsecure/footer.jsp" />
+        <put-attribute name="body" value="/WEB-INF/tiles/templates/blank.jsp" />
     </definition>
 
-    <definition name=".unsecureNewsTemplate" template="/WEB-INF/jsp/templates/unsecure/newsTemplate.jsp">
+    <definition name=".unsecureNewsTemplate" template="/WEB-INF/tiles/templates/unsecure/newsTemplate.jsp">
         <put-attribute name="title" value="" type="string" />
-        <put-attribute name="jumbotron" value="/WEB-INF/jsp/templates/unsecure/jumbotron.jsp" />
-        <put-attribute name="topnavigation" value="/WEB-INF/jsp/templates/unsecure/topnavigation.jsp" />
-        <put-attribute name="footer" value="/WEB-INF/jsp/templates/unsecure/footer.jsp" />
-        <put-attribute name="body" value="/WEB-INF/jsp/templates/blank.jsp" />
+        <put-attribute name="jumbotron" value="/WEB-INF/tiles/templates/unsecure/jumbotron.jsp" />
+        <put-attribute name="topnavigation" value="/WEB-INF/tiles/templates/unsecure/topnavigation.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/tiles/templates/unsecure/footer.jsp" />
+        <put-attribute name="body" value="/WEB-INF/tiles/templates/blank.jsp" />
     </definition>
 
     <definition name="index" extends=".unsecureNewsTemplate">
-        <put-attribute name="body" value="/WEB-INF/jsp/start.jsp" />
+        <put-attribute name="body" value="/WEB-INF/tiles/templates/blank.jsp" />
     </definition>
 
     <definition name="learn-to-dive" extends=".unsecureNewsTemplate">
