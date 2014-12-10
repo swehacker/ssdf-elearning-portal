@@ -18,6 +18,7 @@
 
         <form class="form-signin" action="/login" method='POST' role="form">
             <h2 class="form-signin-heading">Inloggning</h2>
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             <input class="form-control" type='text' name='username' placeholder="Användarnamn" required autofocus>
             <input class="form-control" type='password' name='password' placeholder="Lösenord" />
             <button class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
