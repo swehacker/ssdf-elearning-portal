@@ -1,4 +1,3 @@
-<%@ taglib prefix="s" uri="/struts-tags" %>
 <div class="container">
     <div>
         <% String error = request.getParameter("error");
@@ -17,13 +16,12 @@
         </div>
         <%} %>
 
-        <form class="form-signin" action="<s:url value='/login'/>" method='POST' role="form">
+        <form class="form-signin" action="/login" method='POST' role="form">
             <h2 class="form-signin-heading">Inloggning</h2>
-            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             <input class="form-control" type='text' name='username' placeholder="Användarnamn" required autofocus>
             <input class="form-control" type='password' name='password' placeholder="Lösenord" />
             <button class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
-            <button class="btn btn-lg btn-block" type="button" onclick="window.location='<s:url value='/register' />'">Registrera dig</button>
+            <button class="btn btn-lg btn-block" type="button" onclick="window.location='/register'">Registrera dig</button>
         </form>
     </div>
 </div>
