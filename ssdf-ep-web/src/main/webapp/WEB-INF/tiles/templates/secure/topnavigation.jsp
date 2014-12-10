@@ -2,11 +2,11 @@
 <div class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <s:a action="index" namespace="/" cssClass="navbar-brand" cssStyle="padding-bottom: 0px !important; padding-top: 0px !important;"><img src="../images/delfin_2r_4f.png"></s:a>
+            <a href="/index" class="navbar-brand" style="padding-bottom: 0px !important; padding-top: 0px !important;"><img src="../images/delfin_2r_4f.png"></a>
         </div>
         <div style="float: right; height: 50px;">
-            <s:a href="j_spring_security_logout" cssClass="btn btn-primary btn-sm" role="button" style="margin-top: 10px;" >Log out</s:a>
-            <s:a action="welcome" namespace="/secure" cssClass="btn btn-primary btn-sm" role="button" style="margin-top: 10px;" >Dina sidor</s:a>
+            <a href="/j_spring_security_logout" class="btn btn-primary btn-sm" role="button" style="margin-top: 10px;" >Log out</a>
+            <a href="/secure/welcome" class="btn btn-primary btn-sm" role="button" style="margin-top: 10px;" >Dina sidor</a>
         </div>
     </div>
     <div class="container">
@@ -14,7 +14,7 @@
         <nav role="navigation">
             <ul class="nav navbar-nav">
                 <li>
-                    <s:a action="order-certificate">Registrera certifikat</s:a>
+                    <a href="/secure/order-certificate">Registrera certifikat</a>
                 </li>
             </ul>
         </nav>

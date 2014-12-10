@@ -1,4 +1,4 @@
-package se.ssdf.elearning.web.portal.controllers;
+package se.ssdf.elearning.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
