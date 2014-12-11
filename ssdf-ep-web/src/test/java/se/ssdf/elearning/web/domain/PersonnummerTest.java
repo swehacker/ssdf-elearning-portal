@@ -28,14 +28,4 @@ public class PersonnummerTest {
     public void testCreateIllegalArgument3() throws Exception {
         Personnummer.create("720806-3912");
     }
-
-    @Test
-    public void testIsValidAge() throws Exception {
-
-    }
-
-    @Test
-    public void testIsValidAge1() throws Exception {
-
-    }
 }
