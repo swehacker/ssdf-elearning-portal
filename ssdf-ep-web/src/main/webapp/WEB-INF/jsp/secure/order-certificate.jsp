@@ -17,7 +17,7 @@
                             <label class="control-label col-md-4" for="selectbasic">Certifikat</label>
 
                             <div class="controls col-md-7">
-                                <select id="selectbasic" name="selectbasic" class="input-xlarge form-control">
+                                <select id="selectbasic" name="selectbasic" class="input form-control">
                                     <option>CMAS *</option>
                                     <option>CMAS **</option>
                                     <option>CMAS ***</option>
@@ -30,11 +30,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="prepayed">Certifikat nummer</label>
+                            <label class="control-label col-md-4" for="prepayed">Förbetalt nummer</label>
 
                             <div class="controls col-md-5">
-                                <input id="prepayed" name="prepayed" type="text" placeholder=""
-                                       class="input-xlarge form-control" required="true">
+                                <input id="prepayed" name="prepayed" type="text" placeholder="1010"
+                                       class="input form-control" required="true">
                             </div>
                         </div>
                         <div class="form-group">
@@ -42,7 +42,7 @@
 
                             <div class="controls col-md-7">
                                 <input id="personnummer" name="personnummer" type="text" placeholder="19001203-3912"
-                                       class="input-xlarge form-control" required="">
+                                       class="input form-control" required="">
                             </div>
                         </div>
 
@@ -51,7 +51,7 @@
 
                             <div class="controls col-md-7">
                                 <input id="firstname" name="firstname" type="text" placeholder="Elevens förnamn"
-                                       class="input-xlarge form-control" required="">
+                                       class="input form-control" required="">
                             </div>
                         </div>
 
@@ -60,7 +60,7 @@
 
                             <div class="controls col-md-7">
                                 <input id="lastname" name="lastname" type="text" placeholder="Elevens efternamn"
-                                       class="input-xlarge form-control" required="">
+                                       class="input form-control" required="">
                             </div>
                         </div>
 
@@ -70,7 +70,7 @@
 
                             <div class="controls col-md-7">
                                 <input id="address" name="address" type="text" placeholder="Västralånggatan 19"
-                                       class="input-xlarge form-control" required="">
+                                       class="input form-control" required="">
                             </div>
                         </div>
 
@@ -79,7 +79,7 @@
 
                             <div class="controls col-md-7">
                                 <input id="address2" name="address2" type="text" placeholder="C/O Sven Svensson"
-                                       class="input-xlarge form-control" required="">
+                                       class="input form-control">
                             </div>
                         </div>
 
@@ -88,7 +88,7 @@
 
                             <div class="controls col-md-7">
                                 <input id="postnumber" name="postnumber" type="text" placeholder="212 23"
-                                       class="input-xlarge form-control">
+                                       class="input form-control">
                             </div>
                         </div>
 
@@ -97,7 +97,7 @@
 
                             <div class="controls col-md-7">
                                 <input id="city" name="city" type="text" placeholder="Malmö"
-                                       class="input-xlarge form-control"
+                                       class="input form-control"
                                        required="">
                             </div>
                         </div>
@@ -107,8 +107,8 @@
 
                             <div class="controls col-md-7">
                                 <input id="email" name="email" type="text" placeholder="eMail"
-                                       class="input-xlarge form-control"
-                                       required="">
+                                       class="input form-control"
+                                       >
                             </div>
                         </div>
 
@@ -117,7 +117,7 @@
 
                             <div class="controls col-md-7">
                                 <input id="phonenumber" name="phonenumber" type="text" placeholder="0701122334"
-                                       class="input-xlarge form-control">
+                                       class="input form-control">
                             </div>
                         </div>
 
@@ -140,25 +140,34 @@
 
                             <div class="controls col-md-5">
                                 <input id="instructor" name="instructor" type="text" placeholder=""
-                                       class="input-xlarge form-control" required="true">
+                                       class="input form-control" required="true">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="firstname">Förnamn</label>
+                            <label class="control-label col-md-4" for="i_firstname">Förnamn</label>
 
                             <div class="controls col-md-7">
                                 <input id="i_firstname" name="firstname" type="text" placeholder="Instruktörens förnamn"
-                                       class="input-xlarge form-control" required="">
+                                       class="input form-control" required="">
                             </div>
                         </div>
 
                         <div class="form-group">
-                            <label class="control-label col-md-4" for="lastname">Efternamn</label>
+                            <label class="control-label col-md-4" for="i_lastname">Efternamn</label>
 
                             <div class="controls col-md-7">
                                 <input id="i_lastname" name="lastname" type="text" placeholder="Instruktörens efternamn"
-                                       class="input-xlarge form-control" required="">
+                                       class="input form-control" required="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-4" for="diveschool">Utbildningsställe</label>
+
+                            <div class="controls col-md-7">
+                                <input id="diveschool" name="diveschool" type="text" placeholder="Förening/dykskola"
+                                       class="input form-control" required="">
                             </div>
                         </div>
                     </fieldset>
@@ -167,15 +176,20 @@
                     <fieldset>
                         <div class="form-group">
                             <label class="control-label col-md-4" for="button1id"></label>
-
                             <div class="controls col-md-7">
-                                <button id="button1id" name="button1id" class="btn btn-danger">Avbryt</button>
-                                <button id="button2id" name="button2id" class="btn btn-success">Registrera</button>
+                                <button id="button1id" name="button2id" class="btn btn-success">Registrera</button>
                             </div>
                         </div>
                     </fieldset>
                 </div>
             </form>
+            <p>
+                <h4>FOTOGRAFIER</h4>
+                <ol start="1" type="1">
+                    <li>Foton ska vara av passfoto- typ, dvs visa ansikte, hals och lite av axlarna mot enfärgad, ljus bakgrund. Foton med väx- ter, tegelväggar, husfasader, naturvyer godkänns inte som certifikatsfoton.</li>
+                    <li>Digitala foton ska ha upplösning på minst 150 dpi.</li>
+                </ol>
+            </p>
         </div>
     </div>
 </div>
