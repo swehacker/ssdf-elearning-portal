@@ -25,9 +25,12 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/secure/**").hasRole("USER")
                 .and()
-                .formLogin()
-                .loginPage("/login")
+                    .formLogin().loginPage("/login").failureUrl("/login?error")
+                    .usernameParameter("username").passwordParameter("password")
                 .and()
+                    .logout().logoutSuccessUrl("/login?logout")
+                .and()
+                    .csrf()
         ;
     }
 }

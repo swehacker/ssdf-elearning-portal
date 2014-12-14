@@ -39,7 +39,7 @@
     </definition>
 
     <definition name="index" extends=".unsecureNewsTemplate">
-        <put-attribute name="body" value="/WEB-INF/tiles/templates/blank.jsp" />
+        <put-attribute name="body" value="/WEB-INF/jsp/start.jsp" />
     </definition>
 
     <definition name="learn-to-dive" extends=".unsecureNewsTemplate">
