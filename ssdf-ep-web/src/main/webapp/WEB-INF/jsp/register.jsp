@@ -1,4 +1,5 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <div class="container">
     <div>
         <% String error = request.getParameter("error");
