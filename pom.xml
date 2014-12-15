@@ -8,6 +8,7 @@
     <modules>
         <module>ssdf-ep-common</module>
         <module>ssdf-ep-services</module>
+        <module>ssdf-ep-services-news</module>
         <module>ssdf-ep-services-user</module>
         <module>ssdf-ep-services-certificate</module>
         <module>ssdf-ep-web</module>

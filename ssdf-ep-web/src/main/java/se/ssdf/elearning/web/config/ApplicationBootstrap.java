@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
-@ComponentScan
+@ComponentScan(basePackages = {"se.ssdf.elearning"})
 @EnableAsync
 @EnableScheduling
 @Import({WebSecurityConfig.class, WebConfig.class, DatabaseConfig.class})

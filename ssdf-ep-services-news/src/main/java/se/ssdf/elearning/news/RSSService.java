@@ -1,10 +1,9 @@
-package se.ssdf.elearning.web.news;
+package se.ssdf.elearning.news;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
-import se.ssdf.elearning.news.Message;
 import se.ssdf.elearning.services.NewsService;
 
 import java.util.Iterator;

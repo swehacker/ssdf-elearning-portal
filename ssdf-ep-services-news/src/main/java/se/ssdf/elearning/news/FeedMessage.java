@@ -1,6 +1,4 @@
-package se.ssdf.elearning.web.news;
-
-import se.ssdf.elearning.news.Message;
+package se.ssdf.elearning.news;
 
 public class FeedMessage implements Message {
     private final String title;

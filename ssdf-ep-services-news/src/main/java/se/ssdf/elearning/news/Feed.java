@@ -1,6 +1,4 @@
-package se.ssdf.elearning.web.news;
-
-import se.ssdf.elearning.news.Message;
+package se.ssdf.elearning.news;
 
 import java.util.ArrayList;
 import java.util.Iterator;

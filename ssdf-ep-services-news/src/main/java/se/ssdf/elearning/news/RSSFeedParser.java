@@ -1,4 +1,4 @@
-package se.ssdf.elearning.web.news;
+package se.ssdf.elearning.news;
 
 import javax.xml.stream.XMLEventReader;
 import javax.xml.stream.XMLInputFactory;
@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Date;
 
 class RSSFeedParser {
     private static final String TITLE = "title";
