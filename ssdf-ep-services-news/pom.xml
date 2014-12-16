@@ -9,6 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>SSDF eLearning Portal SERVICES NEWS</name>
     <artifactId>ssdf-ep-services-news</artifactId>
     <packaging>jar</packaging>
 
