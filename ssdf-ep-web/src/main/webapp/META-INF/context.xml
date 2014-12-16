@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context sessionCookiePath="/">
+<Context path="/ssdf">
     <!-- Mail session -->
     <!-- In the mail session definition, replace the email address and the password accordingly -->
     <Resource name="mail/ssdf-mail" auth="Container"
