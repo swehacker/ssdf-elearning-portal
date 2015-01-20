@@ -1,5 +1,6 @@
 package se.ssdf.elearning.services.user;
 
+import javassist.NotFoundException;
 import se.ssdf.elearning.users.User;
 
 public interface UserRepository {
@@ -9,7 +10,7 @@ public interface UserRepository {
      * @param username
      * @return
      */
-    User get(final String username);
+    User get(final String username) throws NotFoundException;
 
     /**
      * Stores a user in the database.

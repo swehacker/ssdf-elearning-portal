@@ -8,8 +8,8 @@ public class UserDO implements User {
     private final String username;
     private final String password;
 
-    UserDO(final String userName, final String password) {
-        this.username = userName;
+    UserDO(final String username, final String password) {
+        this.username = username;
         this.password = password;
     }
 
@@ -17,4 +17,6 @@ public class UserDO implements User {
     public String getUsername() {
         return username;
     }
+
+    public String getPassword() { return password; }
 }

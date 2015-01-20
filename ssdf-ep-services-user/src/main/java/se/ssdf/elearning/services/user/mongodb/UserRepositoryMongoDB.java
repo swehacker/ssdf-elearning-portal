@@ -1,5 +1,6 @@
 package se.ssdf.elearning.services.user.mongodb;
 
+import javassist.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -15,9 +16,11 @@ public class UserRepositoryMongoDB implements UserRepository {
     private MongoTemplate mongoTemplate;
 
     @Override
-    public User get(String username) {
+    public User get(String username) throws NotFoundException {
         Query searchUserQuery = new Query(Criteria.where("username").is(username));
-        return mongoTemplate.findOne(searchUserQuery, UserDO.class);
+        User user = mongoTemplate.findOne(searchUserQuery, UserDO.class);
+        if (user == null ) throw new NotFoundException("Ingen användare matchar användarnamn/lösenord i databasen");
+        return user;
     }
 
     @Override

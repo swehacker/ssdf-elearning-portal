@@ -12,7 +12,7 @@ public class DatabaseConfig {
 
     @Bean
     public MongoDbFactory mongoDbFactory() throws Exception {
-        return new SimpleMongoDbFactory(new MongoClient(), "ssdfdb");
+        return new SimpleMongoDbFactory(new MongoClient("192.168.59.103"), "ssdfdb");
     }
 
     @Bean
