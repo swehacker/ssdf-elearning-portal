@@ -1,12 +1,10 @@
 package se.ssdf.elearning.services;
 
-import se.ssdf.elearning.users.roles.Administrator;
 import se.ssdf.elearning.ImageSrc;
-import se.ssdf.elearning.users.roles.Instructor;
-import se.ssdf.elearning.users.roles.Student;
 import se.ssdf.elearning.certificate.Certificate;
 import se.ssdf.elearning.certificate.CertificateId;
 import se.ssdf.elearning.certificate.CertificateType;
+import se.ssdf.elearning.users.User;
 
 import java.util.Date;
 import java.util.List;
@@ -21,13 +19,13 @@ public interface CertificateService {
      * @param imageSrc
      * @return
      */
-    Certificate order(Student student, Instructor instructor, CertificateId certificateId, ImageSrc imageSrc);
+    Certificate order(User student, User instructor, CertificateId certificateId, ImageSrc imageSrc);
 
-    Certificate beingProcessed(Certificate certificate, Administrator administrator);
+    Certificate beingProcessed(Certificate certificate, User administrator);
 
-    Certificate processed(Certificate certificate, Administrator administrator);
+    Certificate processed(Certificate certificate, User administrator);
 
-    Certificate delivered(Certificate certificate, Administrator administrator);
+    Certificate delivered(Certificate certificate, User administrator);
 
     Certificate find(CertificateId id);
 

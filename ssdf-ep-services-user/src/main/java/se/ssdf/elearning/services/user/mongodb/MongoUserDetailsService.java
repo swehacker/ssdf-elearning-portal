@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 import se.ssdf.elearning.services.UserService;
+import se.ssdf.elearning.users.Role;
 import se.ssdf.elearning.users.User;
 
 import javax.annotation.Resource;
@@ -31,10 +32,10 @@ public class MongoUserDetailsService implements UserDetailsService {
             User user = getUserDetail(username);
             return new org.springframework.security.core.userdetails.User(user.getUsername(),
                     ((UserDO)user).getPassword(),
-                    enabled,
-                    accountNonExpired,
-                    credentialsNonExpired,
-                    accountNonLocked,
+                    ((UserDO)user).isEnabled(),
+                    ((UserDO)user).isAccountNonExpired(),
+                    ((UserDO)user).isCredentialsNonExpired(),
+                    ((UserDO)user).isAccountNonLocked(),
                     getAuthorities());
 
         } catch (NotFoundException nfe) {
@@ -44,7 +45,7 @@ public class MongoUserDetailsService implements UserDetailsService {
 
     public List<GrantedAuthority> getAuthorities() {
         List<GrantedAuthority> authList = new ArrayList<>();
-        authList.add(new SimpleGrantedAuthority("ROLE_USER"));
+        authList.add(new SimpleGrantedAuthority(Role.USER.getName()));
 
         return authList;
     }

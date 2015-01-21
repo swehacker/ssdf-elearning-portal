@@ -1,9 +1,8 @@
 package se.ssdf.elearning.course;
 
 import se.ssdf.elearning.Email;
-import se.ssdf.elearning.users.roles.Instructor;
 import se.ssdf.elearning.PhoneNumber;
-import se.ssdf.elearning.users.roles.Student;
+import se.ssdf.elearning.users.User;
 
 import java.util.Date;
 import java.util.List;
@@ -47,7 +46,7 @@ public interface Course {
      *
      * @return Instructor [required].
      */
-    Instructor getCertifyingInstructor();
+    User getCertifyingInstructor();
 
     /**
      * Returns all instructors that are involved in the course, including the head instructor. This method will always
@@ -55,12 +54,12 @@ public interface Course {
      *
      * @return Instructor [required].
      */
-    List<Instructor> getInstructors();
+    List<User> getInstructors();
 
     /**
      * Returns the students belonging to this course.
      *
      * @return a list of students, or an empty list if no students are registered.
      */
-    List<Student> getStudents();
+    List<User> getStudents();
 }

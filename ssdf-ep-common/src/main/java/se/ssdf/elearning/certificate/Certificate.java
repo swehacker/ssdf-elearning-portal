@@ -1,17 +1,15 @@
 package se.ssdf.elearning.certificate;
 
-import se.ssdf.elearning.users.roles.Administrator;
-import se.ssdf.elearning.users.roles.Instructor;
-import se.ssdf.elearning.users.roles.Student;
+import se.ssdf.elearning.users.User;
 
 import java.util.Date;
 
 public abstract class Certificate {
     private CertificateId certificateId;
     private CertificateType certificateType;
-    private Student student;
-    private Instructor instructor;
-    private Administrator administrator;
+    private User student;
+    private User instructor;
+    private User administrator;
     private Status status;
     private Date created;
 
@@ -23,15 +21,15 @@ public abstract class Certificate {
         return certificateType;
     }
 
-    public Student getStudent() {
+    public User getStudent() {
         return student;
     }
 
-    public Instructor getInstructor() {
+    public User getInstructor() {
         return instructor;
     }
 
-    public Administrator getAdministrator() {
+    public User getAdministrator() {
         return administrator;
     }
 
