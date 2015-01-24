@@ -13,10 +13,8 @@ import java.security.NoSuchAlgorithmException;
  */
 public class MD5Hash {
     public static String hash(String toBeEncrypted) throws NoSuchAlgorithmException, UnsupportedEncodingException {
-        byte[] bytesOfMessage = toBeEncrypted.getBytes("UTF-8");
-
         MessageDigest md = MessageDigest.getInstance("MD5");
-        byte[] thedigest = md.digest(bytesOfMessage);
-        return new String(thedigest);
+        byte[] thedigest = md.digest(toBeEncrypted.getBytes("UTF-8"));
+        return new String(thedigest, "UTF-8");
     }
 }

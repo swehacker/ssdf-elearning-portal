@@ -24,9 +24,6 @@ class RSSFeedParser {
 
     private final URL url;
 
-    private long lastUpdated;
-    private Feed cache;
-
     RSSFeedParser(String feedUrl) {
         try {
             this.url = new URL(feedUrl);
@@ -63,46 +60,47 @@ class RSSFeedParser {
             while (eventReader.hasNext()) {
                 XMLEvent event = eventReader.nextEvent();
                 if (event.isStartElement()) {
-                    String localPart = event.asStartElement().getName()
-                            .getLocalPart();
+                    String localPart = event.asStartElement().getName().getLocalPart();
                     switch (localPart) {
                         case ITEM:
                             if (isFeedHeader) {
                                 isFeedHeader = false;
-                                feed = new Feed(title, link, description, language,
-                                        copyright, pubdate);
+                                feed = new Feed(title, link, description, language, copyright, pubdate);
                             }
-                            event = eventReader.nextEvent();
+                            eventReader.nextEvent();
                             break;
                         case TITLE:
-                            title = getCharacterData(event, eventReader);
+                            title = getCharacterData(eventReader);
                             break;
                         case DESCRIPTION:
-                            description = getCharacterData(event, eventReader);
+                            description = getCharacterData(eventReader);
                             break;
                         case LINK:
-                            link = getCharacterData(event, eventReader);
+                            link = getCharacterData(eventReader);
                             break;
                         case GUID:
-                            guid = getCharacterData(event, eventReader);
+                            guid = getCharacterData(eventReader);
                             break;
                         case LANGUAGE:
-                            language = getCharacterData(event, eventReader);
+                            language = getCharacterData(eventReader);
                             break;
                         case AUTHOR:
-                            author = getCharacterData(event, eventReader);
+                            author = getCharacterData(eventReader);
                             break;
                         case PUB_DATE:
-                            pubdate = getCharacterData(event, eventReader);
+                            pubdate = getCharacterData(eventReader);
                             break;
                         case COPYRIGHT:
-                            copyright = getCharacterData(event, eventReader);
+                            copyright = getCharacterData(eventReader);
+                            break;
+                        default:
+                            eventReader.nextEvent();
                             break;
                     }
                 } else if (event.isEndElement()) {
                     if (event.asEndElement().getName().getLocalPart() == (ITEM)) {
                         feed.addMessage(new FeedMessage(title, description, link, author, guid));
-                        event = eventReader.nextEvent();
+                        eventReader.nextEvent();
                         continue;
                     }
                 }
@@ -113,10 +111,10 @@ class RSSFeedParser {
         return feed;
     }
 
-    private String getCharacterData(XMLEvent event, XMLEventReader eventReader)
+    private String getCharacterData(XMLEventReader eventReader)
             throws XMLStreamException {
         String result = "";
-        event = eventReader.nextEvent();
+        XMLEvent event = eventReader.nextEvent();
         if (event instanceof Characters) {
             result = event.asCharacters().getData();
         }

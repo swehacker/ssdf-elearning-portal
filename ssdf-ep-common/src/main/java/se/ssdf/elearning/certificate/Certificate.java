@@ -34,6 +34,8 @@ public abstract class Certificate {
     }
 
     public Date getCreated() {
-        return created;
+        return new Date(created.getTime());
     }
+
+    public Status getStatus() { return status; }
 }
